@@ -26,8 +26,8 @@ CONFIG = {
     "timeout": 5,
     "threads": 50,
     "user_agent": "KasauScanner/2.0",
-    "log_file": "kasau_scan.log",
-    "report_file": "kasau_report_{timestamp}.txt",
+    "log_file": "scan.log",
+    "report_file": "report_{timestamp}.txt",
     "banner_file": "banner.txt",
     "max_report_width": 80
 }
