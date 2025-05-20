@@ -19,5 +19,5 @@ An advanced vulnerability scanner for infrastructure and web applications with c
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/kasau-scanner.git
+   git clone https://github.com/kitoi1/kasau-scanner.git
    cd kasau-scanner
