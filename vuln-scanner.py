@@ -468,10 +468,15 @@ def main():
     logger.info(f"Target: {args.target}")
     logger.info(f"Open ports: {len(results['port_scan'])}")
     logger.info(f"Web vulnerabilities found: {sum(len(v) for v in results['web_vulns'].values())}")
-    logger.info(f"Outdated packages: {len(results['system_checks']['updates']['updates'])}")
+    
+    # Safely handle updates count
+    updates = results.get('system_checks', {}).get('updates', {}).get('updates', [])
+    logger.info(f"Outdated packages: {len(updates)}")
+    
     logger.info(f"Scan duration: {results['duration']} seconds")
     logger.info(f"Report saved to: {report_file}")
     logger.info("\n[✓] Scan Complete - Stay Secure! - Kasau")
+
 
 if __name__ == "__main__":
     main()
